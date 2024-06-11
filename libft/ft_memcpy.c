@@ -6,7 +6,7 @@
 /*   By: bbustama <bbustama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 13:10:04 by bbustama          #+#    #+#             */
-/*   Updated: 2024/05/09 17:35:55 by bbustama         ###   ########.fr       */
+/*   Updated: 2024/05/07 12:37:02 by bbustama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,14 @@ void	*ft_memcpy(void *restrict dst, const void *__restrict src, size_t n)
 	}
 	return (dst);
 }
+
+/*int	main(void)
+{
+	char	f[] = "Hola";
+	char	d[] = "Ajo";
+	size_t	t = 4;
+
+	ft_memcpy(d, f, t);
+	printf("%s", d);
+	return (0);
+}*/

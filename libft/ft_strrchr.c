@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beli <beli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/16 16:24:31 by bbustama          #+#    #+#             */
-/*   Updated: 2024/05/29 12:58:39 by beli             ###   ########.fr       */
+/*   Created: 2024/05/29 02:40:50 by beli              #+#    #+#             */
+/*   Updated: 2024/05/29 12:54:30 by beli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+char    *ft_strrchr(const char *s, int c)
 {
-	int	position;
+    int	count;
 
-	position = 0;
-	while (s[position] != '\0')
+	count = 0;
+
+	while (s[count] != '\0')
 	{
-		position++;
+		if (s[count] == (char) c)
+		{
+			NULL /*??? no lo entiendo*/= (char *)&s[count];
+		}
+		count++;
 	}
-	return (position);
+	if (c == '\0')
+	{
+		NULL = (char *)&s[count];
+	}
+	return (NULL);   
 }
